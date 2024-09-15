@@ -1,0 +1,97 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 0 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(/img/pirchase-background.webp);
+    height: 100%;
+}
+
+#purchas_main {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 24px;
+    border-radius: 35px;
+    width: 50%;
+    height: 45%;
+    min-width: 400px;
+    max-width: 450px;
+}
+
+#order_summary {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    padding: 50px 14px;
+    border-radius: 35px;
+    width: 27%;
+    height: 45%;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+#order_summary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+#order_summary li {
+    margin: 0 0;
+    color: rgb(37 37 38);
+    font-size: 18px;
+    font-weight: 420;
+    margin-bottom: 40px;
+}
+
+#order_summary p {
+    margin: 0 0;
+    color: rgb(37 37 38);
+    font-size: 28px;
+    font-weight: 520;
+}
+
+#purchas_main p {
+    margin: 0 0;
+    color: rgb(37 37 38);
+    font-size: 20px;
+    font-weight: 520;
+}
+
+#purchas_main input,
+select {
+    height: 60px;
+    padding: 0 10px;
+    border: 0;
+    font-size: 15px;
+    color: rgb(95 97 102);
+    background-color: rgb(233 235 240);
+    border-radius: 10px;
+}
+
+#purchas_main button {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 35px;
+    color: white;
+    background-color: rgb(230 37 42);
+}

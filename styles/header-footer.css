@@ -17,7 +17,7 @@ header > img {
   width: 130px;
 }
 
-ul {
+header ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ ul {
   margin-bottom: 0;
 }
 
-li {
+header li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@ li {
   transition: background-color 0.1s, border-bottom 0.1s;
 }
 
-li > a {
+header li > a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -48,7 +48,7 @@ li > a {
   flex-direction: column;
 }
 
-li:hover {
+header li:hover {
   border-bottom: 2px solid red;
   background-color: #433e3e;
 }
