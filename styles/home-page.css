@@ -4,4 +4,114 @@ body {
   padding: 0;
 }
 
+main {
+  flex-grow: 1;
+  /* background-image: url("../img/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
 
+.description-section {
+  background-image: url("../img/ultrawide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  filter: blur(2px);
+  -webkit-filter: blur(2.5px);
+}
+
+.bg-text {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  text-align: center;
+}
+
+.bg-text > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.marvel {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.marvel-text {
+  display: inline-block;
+  justify-content: center;
+  background-color: red;
+  padding: 0px 5px;
+  font-weight: 900;
+}
+
+.studios {
+  display: inline-block;
+  font-weight: 500;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  line-height: 40px;
+  letter-spacing: -3px;
+  font-size: 42px;
+}
+
+.ten-years {
+  color: red;
+}
+
+.anniversary {
+  font-size: 25px;
+  letter-spacing: 7px;
+  font-weight: 500;
+}
+
+.ordinal {
+  vertical-align: super;
+  font-size: 15px;
+}
+
+.ordinal2 {
+  vertical-align: super;
+  font-size: 10px;
+}
+
+.festival {
+  margin-top: -10px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 9px;
+}
+
+.date-time {
+  color: red;
+  font-size: 20px;
+  letter-spacing: 9px;
+  font-weight: 700;
+}
+
+.exclusive {
+  font-size: 20px;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+
+.imax {
+  font-size: 30px;
+  font-weight: 900;
+  vertical-align: -10%;
+  letter-spacing: 0;
+}
+
+.address {
+  font-size: 15px;
+  letter-spacing: 5.4px;
+  font-weight: 700;
+}
