@@ -1,0 +1,91 @@
+.ticket-section {
+  text-align: center;
+}
+
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.ticket-title,
+.ticket-price {
+  margin: 0;
+}
+
+.ticket-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ticket-price {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.ticket-section-title {
+  margin-bottom: 0;
+}
+
+.comment {
+  margin-top: 0;
+}
+
+.pass {
+  background-image: url(../img/pirchase-background.webp);
+  background-size: cover;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 350px;
+}
+
+.ticket-detail {
+  text-align: left;
+  flex: 1;
+}
+
+.ticket-detail-list {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: -20px;
+  list-style-type: none;
+}
+
+.ticket-detail-list li {
+  margin-bottom: 5px;
+  background: url("../img/iron_logo.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-position: 0 50%;
+}
+
+.buy-now-button {
+  background-color: red;
+  border: none;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  transition: background-color 0.1s, box-shadown 0.1s;
+  cursor: pointer;
+}
+
+.buy-now-button:hover {
+  background-color: rgb(236, 119, 119);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.buy-now-button:active {
+  background-color: red;
+  box-shadow: none;
+}

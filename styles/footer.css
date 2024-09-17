@@ -1,0 +1,78 @@
+footer {
+  background-color: #202020;
+  padding-bottom: 10px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-logo {
+  height: 90px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: rgb(102, 102, 102);
+}
+
+.marvel-um {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.um-logo {
+  height: 20px;
+}
+
+.um-title {
+  margin-bottom: 0;
+}
+.um-detail {
+  margin-top: 0;
+  color: rgb(102, 102, 102);
+}
+
+.brand-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+.brand-icon svg {
+  width: 20px;
+  cursor: pointer;
+  fill: #767676;
+}
+
+.brand-icon svg:hover {
+  fill: white;
+}
+
+.copyright {
+  color: rgb(102, 102, 102);
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
