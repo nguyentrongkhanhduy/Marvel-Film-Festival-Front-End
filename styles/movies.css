@@ -41,6 +41,7 @@
 .movie-date {
   color: red;
   letter-spacing: 2px;
+  font-style: italic;
 }
 
 .featured-movies-container p {
