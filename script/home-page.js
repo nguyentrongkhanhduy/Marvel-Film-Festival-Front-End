@@ -1,3 +1,13 @@
+// load header and footer
+const loadHTML = (selector, file) => {
+  fetch(file)
+      .then(response => response.text())
+      .then(data => document.querySelector(selector).innerHTML = data);
+}
+
+loadHTML('#header', 'header.html');
+loadHTML('#footer', 'footer.html');
+
 const IronMan = {
   name: "IRON MAN",
   img: "../img/iron_man_1.jpg",

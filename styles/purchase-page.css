@@ -64,15 +64,13 @@ body {
     color: rgb(37 37 38);
     font-size: 18px;
     font-weight: 420;
-    margin-bottom: 40px;
     
 }
 #order_summary table,tr,td {
-    border: 1px dotted black;
     border-collapse: collapse;
 }
 #order_summary td {
-    height: 60px;
+    height: 40px;
     padding: 0 10px;
 }
 
@@ -81,6 +79,7 @@ body {
     color: rgb(37 37 38);
     font-size: 28px;
     font-weight: 520;
+    padding-left: 11px;
 }
 
 #purchas_main p {
@@ -133,4 +132,11 @@ select {
 .normal_style {
     font-weight: normal;
     font-size: 20px;
+    text-align: right;
+}
+#date {
+    font-size: 18px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 85px;
 }

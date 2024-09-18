@@ -1,3 +1,13 @@
+// load header and footer
+const loadHTML = (selector, file) => {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => document.querySelector(selector).innerHTML = data);
+}
+
+loadHTML('#header', 'header.html');
+loadHTML('#footer', 'footer.html');
+
 const ticket_object = {
     one_pass: 50,
     full_pass: 300
@@ -37,10 +47,18 @@ const pay_now = () => {
         let tax = subtotal * 0.13
         let total = subtotal + tax
         document.querySelector("#ticket_number").innerHTML = valid_quant
-        document.querySelector("#unit_price").innerHTML = ticket_object[ticket_type]
-        document.querySelector("#subtotal_price").innerHTML = subtotal
-        document.querySelector("#tax").innerHTML = tax
-        document.querySelector("#total_price").innerHTML = total
+        document.querySelector("#unit_price").innerHTML = ticket_object[ticket_type].toFixed(2)
+        document.querySelector("#subtotal_price").innerHTML = subtotal.toFixed(2)
+        document.querySelector("#tax").innerHTML = tax.toFixed(2)
+        document.querySelector("#total_price").innerHTML = total.toFixed(2)
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const date = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.querySelector("#date").innerHTML = `${year}-${month}-${date} ${hours}:${minutes}:${seconds}`;
         document.querySelector("#order_summary").style.display = "flex"
     }
 }
