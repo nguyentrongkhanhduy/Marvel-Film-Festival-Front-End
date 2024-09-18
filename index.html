@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/description.css" />
     <link rel="stylesheet" href="styles/ticket.css" />
+    <link rel="stylesheet" href="styles/movies.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +24,15 @@
 
       main {
         flex-grow: 1;
+      }
+
+      hr {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        border: 2px solid rgb(102, 102, 102);
+        border-radius: 5px;
+        opacity: 0.3;
+        width: 30%;
       }
     </style>
   </head>
@@ -48,6 +58,7 @@
           </li>
         </ul>
       </header>
+
       <main>
         <div class="description-section"></div>
         <div class="bg-text">
@@ -75,35 +86,48 @@
           </p>
           <div class="ticket-container">
             <div class="pass">
-              <img src="" alt="" />
-              <p class="ticket-title">ONE DAY PASS</p>
-              <p class="ticket-price">$50</p>
-              <div class="ticket-detail">
-                <ul class="ticket-detail-list">
-                  <li>Access to every film on <strong>ONE DAY</strong></li>
-                  <li>5% off all snacks and drinks</li>
-                </ul>
+              <div class="ticket-title-container">
+                <p class="ticket-title">ONE DAY PASS</p>
               </div>
-              <button class="buy-now-button">BUY NOW</button>
+              <div class="ticket-content-container">
+                <p class="ticket-price">$50</p>
+                <div class="ticket-detail">
+                  <ul class="ticket-detail-list">
+                    <li>Access to every film on <strong>ONE DAY</strong></li>
+                    <li>5% off all snacks and drinks</li>
+                  </ul>
+                </div>
+                <button class="buy-now-button">BUY NOW</button>
+              </div>
             </div>
             <div class="pass">
-              <img src="" alt="" />
-              <p class="ticket-title">ALL ACCESS PASS</p>
-              <p class="ticket-price">$250</p>
-              <div class="ticket-detail">
-                <ul class="ticket-detail-list">
-                  <li>
-                    Access to <strong>EVERY</strong> film
-                    <strong>during the festival</strong>
-                  </li>
-                  <li>Skip the line with fast entry</li>
-                  <li>10% off all snacks and drinks</li>
-                  <li>Exclusive backstage meet and greets</li>
-                </ul>
+              <div class="ticket-title-container">
+                <p class="ticket-title">ALL ACCESS PASS</p>
               </div>
-              <button class="buy-now-button">BUY NOW</button>
+              <div class="ticket-content-container">
+                <p class="ticket-price">$300</p>
+                <div class="ticket-detail">
+                  <ul class="ticket-detail-list">
+                    <li>
+                      Access to <strong>EVERY</strong> film
+                      <strong>during the festival</strong>
+                    </li>
+                    <li>Skip the line with fast entry</li>
+                    <li>10% off all snacks and drinks</li>
+                    <li>Exclusive backstage meet and greets</li>
+                  </ul>
+                </div>
+                <button class="buy-now-button">BUY NOW</button>
+              </div>
             </div>
           </div>
+        </div>
+
+        <hr />
+
+        <div class="featured-movies-container">
+          <h1>FEATURED MOVIES</h1>
+          <div id="movies-container"></div>
         </div>
       </main>
       <footer>
@@ -214,5 +238,7 @@
         <p class="copyright">&copy; 2024 Marvel</p>
       </footer>
     </div>
+
+    <script src="script/home-page.js"></script>
   </body>
 </html>

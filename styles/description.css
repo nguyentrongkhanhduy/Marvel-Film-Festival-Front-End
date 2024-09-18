@@ -19,6 +19,9 @@
   justify-content: center;
   color: white;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 7px;
 }
 
 .bg-text p {
