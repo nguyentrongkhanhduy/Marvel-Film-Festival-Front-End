@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/purchase-page.css">
-    <link rel="stylesheet" href="styles/header-footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +22,7 @@
         <img src="img/marvel_logo.png" alt="" />
         <ul>
             <li>
-                <a href="#">HOME</a>
+                <a href="index.html">HOME</a>
             </li>
             <li>
                 <a href="#">SCHEDULE</a>
@@ -41,27 +42,28 @@
 
 
         <main id="purchas_main">
+            <p>Unit ticket price:<span class="normal_style" id="ticket_price"></span></p>
             <p>Select the ticket type</p>
-            <select id="ticket_type">
-                <option value="one_pass">One Movie Pass</option>
-                <option value="full_pass">Full Movies Pass</option>
+            <select class="normal_input" id="ticket_type">
+                <option value="one_pass">ONE DAY PASS</option>
+                <option value="full_pass">ALL ACCESS PASS</option>
             </select>
             <p>Enter quantity of tickets</p>
-            <input id="tickets_quantity" type="number" placeholder="Enter quantity of tickets" />
+            <input class="normal_input" id="tickets_quantity" value="1" type="number" step="1" placeholder="Enter quantity of tickets" />
             <p>Enter credit card information.</p>
-            <input id="tickets_quantity" type="text" placeholder="Enter credit card information" />
+            <input class="normal_input" id="credit_card" type="text" placeholder="Enter credit card information" />
             <button id="pay">Pay Now</button>
 
         </main>
         <div id="order_summary">
             <p>Summary:</p>
-            <ul>
-                <li>Number of tickets: <span id="ticket_number"></span></li>
-                <li>Price per ticket: $<span id="unit_price"></span></li>
-                <li>Subtotal: $<span id="subtotal_price"></span></li>
-                <li>Tax (13%): $<span id="tax"></span></li>
-                <li>Final Price: $<span id="total_price"></span></li>
-            </ul>
+            <table>
+                <tr><td>Number of tickets:</td><td class="normal_style"><span id="ticket_number"></span></td></tr>
+                <tr><td>Price per ticket:</td><td class="normal_style">$<span id="unit_price"></span></td></tr>
+                <tr><td>Subtotal:</td><td class="normal_style">$<span id="subtotal_price"></span></td></tr>
+                <tr><td>Tax (13%):</td><td class="normal_style">$<span id="tax"></span></td></tr>
+                <tr><td>Final Price:</td><td class="normal_style">$<span id="total_price"></span></td></tr>
+            </table>
         </div>
     </div>
     <footer>
@@ -129,7 +131,7 @@
         </div>
         <p class="copyright">&copy; 2024 Marvel</p>
     </footer>
-    <script src="" async defer></script>
+    <script text="javascript" src="script/purchase-page.js"></script>
 </body>
 
 </html>

@@ -29,14 +29,20 @@ body {
     height: 45%;
     min-width: 400px;
     max-width: 450px;
+    opacity: 0.9;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.549); /* Floating shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#purchas_main:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
 }
 
 #order_summary {
-    justify-content: center;
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     font-family: "Roboto", sans-serif;
     padding: 50px 14px;
     border-radius: 35px;
@@ -44,21 +50,30 @@ body {
     height: 45%;
     min-width: 100px;
     max-width: 300px;
+    opacity: 0.9;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.549);
+    transition: box-shadow 0.3s ease;
 }
 
-#order_summary ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 30px;
+#order_summary:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); 
 }
 
-#order_summary li {
+#order_summary table {
     margin: 0 0;
     color: rgb(37 37 38);
     font-size: 18px;
     font-weight: 420;
     margin-bottom: 40px;
+    
+}
+#order_summary table,tr,td {
+    border: 1px dotted black;
+    border-collapse: collapse;
+}
+#order_summary td {
+    height: 60px;
+    padding: 0 10px;
 }
 
 #order_summary p {
@@ -79,11 +94,11 @@ body {
 select {
     height: 60px;
     padding: 0 10px;
-    border: 0;
     font-size: 15px;
     color: rgb(95 97 102);
     background-color: rgb(233 235 240);
-    border-radius: 10px;
+    border-radius: 7px;
+    box-sizing: border-box;
 }
 
 #purchas_main button {
@@ -94,4 +109,28 @@ select {
     border-radius: 35px;
     color: white;
     background-color: rgb(230 37 42);
+    cursor: pointer;
+    margin-top: 20px;
+}
+#purchas_main button:hover {
+    transform: translateY(-2px); /* Move the button up by 5px */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#purchas_main input:hover, select:hover {
+    background-color: rgb(242, 244, 248);
+}
+
+.normal_input {
+    border: none;
+}
+.error_input {
+    border: 2px solid red;
+}
+.error_input::placeholder {
+    color:red;
+}
+.normal_style {
+    font-weight: normal;
+    font-size: 20px;
 }
