@@ -59,6 +59,7 @@
 }
 
 .anniversary {
+  margin-left: 8px;
   font-size: 30px;
   letter-spacing: 13.5px;
   font-weight: 500;
@@ -86,6 +87,7 @@
   font-size: 32px;
   letter-spacing: 12px;
   font-weight: 700;
+  margin-left: 8px;
 }
 
 .exclusive {
@@ -105,4 +107,5 @@
   font-size: 23px;
   letter-spacing: 8px;
   font-weight: 700;
+  margin-left: 8px;
 }
