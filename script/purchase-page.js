@@ -88,7 +88,7 @@ const validate = (validation_obj) => {
     }
     // validate credit card
     let valid_card = validation_obj.card.replace(/\s+/g, '')
-    if (valid_card.length !== 6) {
+    if (valid_card.length !== 6 || isNaN(valid_card)) {
         display_error(true, "#credit_card", 'error_input', 'Error: credit card must be 6 digits long!')
         validate_res = false
     }
