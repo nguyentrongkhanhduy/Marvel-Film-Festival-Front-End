@@ -73,11 +73,11 @@ const validate = (validation_obj) => {
     } else {
         if (!isNaN(valid_quant)) {
             if (valid_quant <= 0) {
-                display_error(true, "#tickets_quantity", 'error_input', 'Error: quantity of tickets must > 0!')
+                display_error(true, "#tickets_quantity", 'error_input', 'Error: you must select at least 1 ticket!')
                 validate_res = false
             } else {
                 if (!Number.isInteger(valid_quant)) {
-                    display_error(true, "#tickets_quantity", 'error_input', 'Error: quantity of tickets must be integer!')
+                    display_error(true, "#tickets_quantity", 'error_input', 'Error: invalid input!')
                     validate_res = false
                 }
             }
