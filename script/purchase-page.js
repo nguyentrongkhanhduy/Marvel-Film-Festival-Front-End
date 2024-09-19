@@ -68,7 +68,7 @@ const validate = (validation_obj) => {
     // validate tickets_quantity
     let valid_quant = Number(validation_obj.quantity)
     if (validation_obj.quantity.length === 0) {
-        display_error(false, "#tickets_quantity", 'error_input', 'Error: quantity of tickets required!')
+        display_error(true, "#tickets_quantity", 'error_input', 'Error: you must select at least 1 ticket!')
         validate_res = false
     } else {
         if (!isNaN(valid_quant)) {
