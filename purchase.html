@@ -30,7 +30,7 @@
                 <option value="full_pass">ALL ACCESS PASS</option>
             </select>
             <p>Enter quantity of tickets</p>
-            <input class="normal_input" id="tickets_quantity" value="1" type="number" step="1" placeholder="Enter quantity of tickets" />
+            <input class="normal_input" id="tickets_quantity" value="1" type="number" step="1" min="1" pattern="[^\-.]*" placeholder="Enter quantity of tickets" />
             <p>Enter credit card information.</p>
             <input class="normal_input" id="credit_card" type="text" placeholder="Enter credit card information" />
             <button id="pay">Pay Now</button>
